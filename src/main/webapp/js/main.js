@@ -12,9 +12,10 @@ function enterRoom(roomID) {
 }
 
 function addRoom() {
-    let code = document.getElementById("room-code").value;
-    let table = document.getElementById("rooms-table");
-    table.innerHTML += '<td><button onclick="enterRoom("'+code+'")">'+code+'</button></td>';
+    //let code = document.getElementById("room-code").value;
+    let code = "Room" + Math.floor(Math.random()*20);
+    let table = document.getElementById("room_buttons_table");
+    table.innerHTML += "<td><button onclick=\"enterRoom('"+code+"')\">"+code+"</button></td>";
 }
 
 document.getElementById("input").addEventListener("keyup", function (event) {

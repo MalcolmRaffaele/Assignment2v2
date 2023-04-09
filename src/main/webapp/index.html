@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body style="margin:0;">
+<script src="js/main.js"></script>
+<div class="sidenav" id="rooms">
+    <table id="rooms-table">
+        <tbody>
+        <tr>
+            <td><button id="btRoom" onclick="addRoom()">Add Room</button></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="room-code" placeholder="Room Code"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="main" id="chat-box">
+    <textarea title="Chat Log" id="log" readonly
+              style="display: block; width: 100%; height: 600px; resize: none; margin: 0; padding: 0; border: 0;"></textarea>
+    <input title="Chat Input" id="input" type="text" style="display: block; width: 100%; border-width: 1px 0 1px 0;"
+           autofocus/>
+</div>
+
+
+</body>
+</html>

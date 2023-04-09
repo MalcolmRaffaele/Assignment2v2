@@ -1,32 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="" xmlns="http://www.w3.org/1999/html">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Chat</title>
-    <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <title>Chat Server</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="theme-color" content="#fafafa">
+
 </head>
-<body style="margin:0;">
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-<div class="sidenav" id="rooms">
-    <table id="rooms-table">
-        <tbody>
-        <tr>
-            <td><button id="btRoom" onclick="addRoom()">Add Room</button></td>
-        </tr>
-        <tr>
-            <td><input type="text" id="room-code" placeholder="Room Code"></td>
-        </tr>
-        </tbody>
+
+<!-- ################################################################################## -->
+<!-- ################################################################################## -->
+<!-- ################################################################################## -->
+
+<body>
+<div class="room-title" id = "room_title">
+    Room 1
+</div>
+<div class="chat">
+    <table id = "chat_table">
+        <tr><td>
+            <h1>User 1</h1><h2>2:19 PM</h2><p>Sample text.</p> <!-- remove this later... -->
+        </td></tr>
+    </table>
+</div>
+<div class="input-field" id = "input_div">
+    <input type="text" id = "input" placeholder="Message Room 1">
+</div>
+<div class="sidebar">
+    <button class="circle-button" onclick="addRoom()">+</button>
+    <table id = "room_buttons_table">
+        <tr><td><button class="room-button">Room 1</button></td></tr>
     </table>
 </div>
 
-<div class="main" id="chat-box">
-    <textarea title="Chat Log" id="log" readonly
-              style="display: block; width: 100%; height: 600px; resize: none; margin: 0; padding: 0; border: 0;"></textarea>
-    <input title="Chat Input" id="input" type="text" style="display: block; width: 100%; border-width: 1px 0 1px 0;"
-           autofocus/>
-</div>
+<!-- ################################################################################## -->
+<!-- ################################################################################## -->
+<!-- ################################################################################## -->
 
-
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
+
 </html>
+
+

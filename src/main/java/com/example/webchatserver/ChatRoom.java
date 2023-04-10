@@ -1,4 +1,4 @@
-package com.example.wschatserverdemo;
+package com.example.webchatserver;
 
 import java.util.HashMap;
 import java.util.Map;

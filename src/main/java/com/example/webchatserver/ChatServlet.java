@@ -1,4 +1,4 @@
-package com.example.wschatserverdemo;
+package com.example.webchatserver;
 
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

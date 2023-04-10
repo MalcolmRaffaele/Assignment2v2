@@ -12,8 +12,8 @@ import java.util.Map;
 @ServerEndpoint(value="/ws/{roomID}")
 public class ChatServer {
 
-    private final Map<String, String> usernames = new HashMap<String, String>();
-    private static final Map<String, String> roomList = new HashMap<String, String>();
+    private Map<String, String> usernames = new HashMap<String, String>();
+    private static Map<String, String> roomList = new HashMap<String, String>();
 
     /**
      * Called when a client opens a new connection to the server.

@@ -27,7 +27,8 @@
 html {
     font-family: Arial, serif;
     overflow-x: hidden; /*Stop silly horizontal scrolling*/
-    background: linear-gradient(45deg, var(--bg-1), var(--bg-2));
+    /* background: linear-gradient(45deg, var(--bg-1), var(--bg-2)); Doesn't work in-browser */
+    background: var(--darker);
 }
 .sidebar {
     width: 200px;
